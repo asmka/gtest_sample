@@ -1,0 +1,8 @@
+/googletest/
+/include/gtest
+/include/gmock
+/lib/*
+/obj/*
+/target/*
+
+!*.gitkeep
