@@ -23,10 +23,9 @@ RM = rm -f
 buildtype = release
 ifeq ($(buildtype), release)
 	COMPFLAGS += -O3
-	LINKFLAGS += -O3
 else ifeq ($(buildtype), debug)
 	COMPFLAGS += -O0 -g -D_DEBUG
-	LINKFLAGS += -O0 -g -D_DEBUG
+	LINKFLAGS += -g
 else
 	$(error buildtype must be release or debug)
 endif
